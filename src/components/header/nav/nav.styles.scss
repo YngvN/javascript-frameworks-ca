@@ -1,0 +1,62 @@
+nav {
+    background-color: #444;
+      color: #fff;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+  ul {
+      list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+    li {
+        color: #fff;
+
+
+
+      a {
+            color: #fff;
+            text-decoration: none;
+          
+            &.active {
+              background-color: red; // This styles the active link
+            }
+          
+            &:hover {
+              color: lightcoral;
+            }
+            &.active {
+              background-color: red;
+            }
+      }
+
+
+    }
+    .cart {
+      position: relative;
+
+      background-color: var(--color-primary);
+      border-radius: 20px;
+      padding: 10px;
+
+
+      .counter {
+        background-color: var(--color-black);
+          position: absolute;
+          top: 70%;
+          right: 0;
+          color: var(--color-white);
+          font-weight: 500;
+          padding: 5%;
+          border-radius: 50%;
+      }
+    }
+  }
+}

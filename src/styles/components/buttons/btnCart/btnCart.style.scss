@@ -1,0 +1,61 @@
+
+
+.btn-cart {
+
+    height: 30px;
+    width:  30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+    span {
+        display: block;
+        position: absolute;
+        height: 10%;
+        background-color: var(--color-white);
+        border-radius: 10px;
+
+        &.horizontal {
+
+
+
+            &.top {
+                top: 36%;
+                width: 80%;
+
+            }
+            &.bottom {
+                bottom: 10%;
+                width: 65%;
+            }
+        }
+        &.vertical {
+
+            &.left {
+                left: -7%;
+                rotate: 80deg;
+
+            }
+            &.middle {
+                rotate: 90deg;
+                width: 80%;  
+                top: 40%;
+
+            }
+            &.right {
+                right: -7%;
+                rotate: -80deg;
+                                
+            }
+            &.side {
+                top: 55%;
+                width: 50%;
+            }
+
+        }
+
+    }
+}

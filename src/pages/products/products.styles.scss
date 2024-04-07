@@ -1,0 +1,13 @@
+.productDetails {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        max-height: 30em;
+        object-fit: contain;
+    }
+    .discount-percentage {
+        color: red;
+        font-weight: bold;
+    }
+}

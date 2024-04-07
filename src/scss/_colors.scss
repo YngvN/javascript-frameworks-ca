@@ -1,0 +1,19 @@
+$primary-color: #000000;
+$secondary-color: #000000;
+
+$white: #ffff;
+$black: #000000;
+
+$lighten: 5;
+$darken: 25;
+
+$colors: (
+    primary: (base: $primary-color,
+        light: lighten($primary-color, $lighten),
+        darken: darken($primary-color, $darken),
+    ),
+    secondary: (base: $secondary-color,
+        light: lighten($secondary-color, $lighten),
+        darken: darken($secondary-color, $darken),
+    ),
+    )
