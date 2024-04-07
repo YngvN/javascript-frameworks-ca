@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 interface ApiResponse {
-  data: Result[]; // Changed from Product[] to Result[]
+  data: Result[]; 
   meta: {
     isFirstPage: boolean;
     isLastPage: boolean;
@@ -13,7 +13,7 @@ interface ApiResponse {
   };
 }
 
-// Changed interface name from Product to Result
+
 interface Image {
   url: string;
   alt: string;
@@ -40,13 +40,12 @@ interface Result {
 
 
 export const useSearchProducts = (baseUrl: string, query: string) => {
-  const [results, setResults] = useState<Result[]>([]); // Changed from products to results for clarity
+  const [results, setResults] = useState<Result[]>([]); 
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     if (query.trim() === '') {
-      // Optionally reset results or handle empty query scenario
       setResults([]);
       setLoading(false);
       return;
@@ -55,7 +54,6 @@ export const useSearchProducts = (baseUrl: string, query: string) => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        // Construct the URL with the search query
         const url = `${baseUrl}?title=${encodeURIComponent(query)}`;
         const response = await fetch(url);
 
@@ -64,7 +62,7 @@ export const useSearchProducts = (baseUrl: string, query: string) => {
         const json: ApiResponse = await response.json();
         console.log(json);
         
-        setResults(json.data); // Updated to reflect the change to Result[]
+        setResults(json.data); 
       } catch (err: any) {
         setError(err.message);
         console.error('Search fetch error:', err.message);
@@ -76,5 +74,5 @@ export const useSearchProducts = (baseUrl: string, query: string) => {
     fetchData();
   }, [baseUrl, query]);
 
-  return { products: results, loading, error }; // Changed the return object's property to "products" for backward compatibility
-};
+  return { products: results, loading, error }; 
+}
