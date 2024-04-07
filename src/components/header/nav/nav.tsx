@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from 'react-redux';
 import { BtnCart } from "../../../styles/components/buttons/btnCart/btnCart";
 import "./nav.styles.scss";
-// import * as S from './nav.styles';
+
 
 
 
