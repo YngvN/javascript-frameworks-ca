@@ -2,8 +2,8 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
     html {
-        --color-primary: yellow;
-        --color-secondary: red;
+        --color-primary: #2C2C54;
+        --color-secondary: #ACC3A6;
         --color-white: #ffffff;
         --color-black: #000000;
         height: 100%;
