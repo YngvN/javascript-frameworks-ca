@@ -2,7 +2,10 @@
 
 ![image](https://hp.nykas.me/wp-content/uploads/2024/05/Skjermbilde-2024-05-28-kl.-14.37.14-1.png)
 
+
 Simple store using React and redux.
+
+[Link to site](https://main--storethingy.netlify.app/)
 
 ## Description
 
