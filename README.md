@@ -9,7 +9,7 @@ Simple store using React and redux.
 
 ## Description
 
-First page using React. 
+First attempt at using React. 
 
 ## Built With
 
